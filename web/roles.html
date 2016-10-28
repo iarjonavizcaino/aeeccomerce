@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Administración de Roles</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" 
+                src="js/plugins/jquery-3.1.0.min.js">
+        </script>
+        <script type="text/javascript" 
+                src="js/plugins/jquery.validate.min.js">
+        </script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.growl.js"></script>
+        <script type="text/javascript"
+        src="js/Roles.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery.growl.css">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <form id="frmRole">
+                    <div class="form-group">
+                        <label class="control-label" for="rolename">Rol</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input class="form-control" 
+                                   id="rolename" name="rolename"
+                                   placeholder="Nombre del rol">
+                        </div>
+
+                    </div>
+                    <div>
+                        <button type="submit"
+                                class="btn btn-block btn-primary btn-lg">
+                            <i class="glyphicon glyphicon-save"></i>
+                            Guardar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <table id="tbRoles">
+                    <thead>
+                        <tr>
+                            <td>Clave</td>
+                            <td>Rol</td>
+                            <td>Operaciones</td>
+                            
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
